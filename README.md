@@ -1,10 +1,34 @@
 # Movie Recommendation System
 
+## Strategy
+
 1. Retrieve data from online movie database.
+    * Each movie has a unique TT Id and each crew member has a NM Id.
+    * Besides movie information, select a group of top reviewers and get their raking on movies in database.
+        - Each user has a unique UR Id on IMDb.
 2. Create a recommendation system that allows users to like or dislike several movies and tries to recommend movies for them.
 
+## TODO
+- [x] Find some movie lists.
+  - [Top 100 Greatest Movies of All Time](https://www.imdb.com/list/ls055592025/)
+  - [IMDb Top 250](https://www.imdb.com/chart/top)
+  - [IMDb Top 250 (By popularity)](https://www.imdb.com/search/title/?groups=top_250)
+  - [Highest Grossing Movies Worldwide](https://www.imdb.com/list/ls063528769/)
+  - [Top 50 Action Movies](https://www.imdb.com/list/ls069349708/)
+  - [Best Sci-fi Movies](https://www.imdb.com/list/ls025899454/)
+  - [Best Romance Movies](https://www.imdb.com/list/ls025828574/)
+  - [Best Comedy Movies](https://www.imdb.com/list/ls072723591/)
+  - [Best Adventure Movies](https://www.imdb.com/list/ls069375441/)
+  - [Best Thriller Movies](https://www.imdb.com/list/ls058238715/)
+  - [Best Fantasy Movies](https://www.imdb.com/list/ls057227085/)
+- [ ] Get all movie links from the lists.
+  - Exclude movies that has rating count less than 50,000.
+- [x] Extract movie information from an IMDb page.
+- [ ] Get IMDb's top reviewers and get their rating history.
+- [ ] Write the filter to recommend movies based on user's rating history.
 
-Useful information about a movie:
+
+## Useful information about a movie:
 - ID：tt1375666
   * `https://www.imdb.com/title/tt1375666/`
 - Name: Inception
